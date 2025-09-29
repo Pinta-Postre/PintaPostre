@@ -1,0 +1,121 @@
+/* 1. Definición de Paleta de Colores */
+:root {
+    --color-celeste-claro: #E0F7FA; /* Fondo muy claro */
+    --color-celeste-principal: #00BCD4; /* Botones y énfasis */
+    --color-violeta-oscuro: #4A148C; /* Títulos y texto principal */
+    --color-violeta-acento: #8E24AA; /* Acentos o hover */
+    --color-whatsapp: #25D366;
+}
+
+/* 2. Estilos Globales y Tipografía */
+body {
+    font-family: sans-serif; /* Fuente limpia y simple */
+    background-color: var(--color-celeste-claro); /* Fondo claro para resaltar postres */
+    color: #333;
+}
+
+h1, h5 {
+    color: var(--color-violeta-oscuro); /* Títulos en color principal */
+    font-weight: 700 !important;
+}
+
+/* 3. Barra de Navegación */
+.navbar {
+    background-color: #FFFFFF !important; /* Barra de navegación blanca para limpieza */
+    border-bottom: 3px solid var(--color-celeste-principal);
+}
+.navbar-brand {
+    color: var(--color-violeta-oscuro) !important;
+    font-size: 1.5rem;
+}
+
+/* 4. Estilo de las Tarjetas de Postres */
+.card-postre {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--color-celeste-principal); /* Borde suave */
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+}
+.card-postre:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(74, 20, 140, 0.2); /* Sombra con toque violeta */
+}
+.card-img-top {
+    height: 250px; /* Altura fija para todas las imágenes */
+    object-fit: cover;
+}
+.card-title {
+    color: var(--color-violeta-acento) !important;
+}
+
+/* 5. Botones de Acción (WhatsApp e Instagram) */
+
+/* Botón de WhatsApp */
+.whatsapp-btn-custom {
+    background-color: var(--color-whatsapp);
+    border-color: var(--color-whatsapp);
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.whatsapp-btn-custom:hover {
+    background-color: #1EAE55; /* Un verde un poco más oscuro al pasar el mouse */
+    border-color: #1EAE55;
+    color: white;
+}
+
+/* Botón de Instagram en la barra de navegación */
+.btn-outline-dark {
+    color: var(--color-violeta-oscuro) !important;
+    border-color: var(--color-violeta-oscuro) !important;
+    transition: background-color 0.3s;
+}
+.btn-outline-dark:hover {
+    background-color: var(--color-violeta-acento) !important;
+    color: white !important;
+    border-color: var(--color-violeta-acento) !important;
+}
+
+/* 6. Pie de Página (Footer) */
+footer {
+    background-color: var(--color-violeta-oscuro) !important; /* Fondo en violeta oscuro */
+    color: var(--color-celeste-claro) !important;
+    padding: 2rem 0;
+}
+footer a {
+    color: var(--color-celeste-principal) !important;
+    transition: color 0.3s;
+}
+footer a:hover {
+    color: white !important;
+}
+
+/* 7. Estilo del Modal (Ventana de Selección) */
+.modal-header {
+    /* Fondo del header ya definido inline en index.html, pero se asegura el color del icono */
+    border-bottom: 3px solid var(--color-violeta-acento);
+}
+#modalBodyContent .whatsapp-btn-custom {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Estilo para la sección superior del logo */
+.logo-hero {
+    background-color: #ffffff; /* Fondo blanco o del color de tu logo para que destaque */
+    border-bottom: 1px solid var(--color-celeste-claro);
+}
+
+/* Estilo para controlar el tamaño del logo */
+.custom-logo-size {
+    max-width: 250px; /* Tamaño máximo del logo en escritorio */
+    height: auto;
+}
+
+/* Media Query: Ajuste para celulares pequeños */
+@media (max-width: 576px) {
+    .custom-logo-size {
+        max-width: 180px; /* Reducir el tamaño del logo en móviles */
+    }
+}
