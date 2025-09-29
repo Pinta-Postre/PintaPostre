@@ -15,7 +15,7 @@ const postres = [
     },
     {
         nombre: "Turron de Quaker",
-        descripcion: "Turrón echo con chocolate . Irresistible.",
+        descripcion: "Turrón hecho con chocolate . Irresistible.",
         precio: "$6.500",
         imagen: "imagenes/turron.jpg",
         id: "turron-chocolate"
@@ -40,7 +40,7 @@ const postres = [
 // ** FUNCIÓN GLOBAL PARA ARMAR EL MODAL (VENTANA) **
 window.generarLinksModal = function(postreNombre) {
     // 1. Arma el mensaje automático con el nombre del postre
-    const mensaje = `¡Hola! Me encantaría ordenar el postre: *${postreNombre}*. ¿Me podrías indicar la disponibilidad y como es el tema del envío?`;
+    const mensaje = `¡Hola! Me encantaría ordenar el postre: *${postreNombre}*. ¿Me podrías enviar información de la disponibilidad y costos de envío?`;
     const mensajeCodificado = encodeURIComponent(mensaje);
     
     // 2. Genera los botones de los dos contactos
